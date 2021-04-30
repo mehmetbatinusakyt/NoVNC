@@ -31,6 +31,7 @@ RUN set -ex; \
         libglu1-mesa \
         libqt5webkit5 \
         libqt5x11extras5 \
+	qbittorrent \
         qml-module-qtquick-controls \
         qml-module-qtquick-dialogs \
     && apt-get autoclean \
@@ -53,9 +54,6 @@ RUN adduser ubuntu
 RUN echo "ubuntu:ubuntu" | chpasswd && \
     adduser ubuntu sudo && \
     sudo usermod -a -G sudo ubuntu
-
-RUN sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable \
-     && sudo apt-get update && sudo apt-get install qbittorrent
 
 COPY . /app
 
