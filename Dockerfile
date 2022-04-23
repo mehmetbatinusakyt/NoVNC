@@ -8,6 +8,8 @@ RUN set -ex; \
         ubuntu-desktop \
         unity-lens-applications \
         gnome-panel \
+	screen \
+	screenfetch \
         metacity \
         nautilus \
         gedit \
