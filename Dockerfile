@@ -12,6 +12,7 @@ RUN set -ex; \
         nautilus \
         gedit \
         xterm \
+	qemu-system \
         sudo \
 	    firefox \
         bash \
